@@ -1,0 +1,88 @@
+%% ----------------------------------------------------
+%%              NOTES-TEMPLATE
+%% ----------------------------------------------------
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{mathrsfs}
+\usepackage{multicol}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage[autostyle]{csquotes}
+\renewcommand{\baselinestretch}{0.8}
+\setlength{\columnsep}{1cm}
+\usepackage{xcolor} % font coloring
+\usepackage{sectsty}
+%\sectionfont{\color{red}}  % sets colour of sections
+\setlength{\parindent}{-1em}
+%\sectionfont{\color{red}}  % sets colour of sections
+%\subsectionfont{\color{purple}}
+%\subsubsectionfont{\color{blue}}
+
+%% math macros
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\W}{\mathbb{W}}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{conv}{Convention}
+\newtheorem{rem}{Remark}
+\newtheorem{lem}{Lemma}
+\newtheorem{cor}{Corollary}
+\newtheorem{ex}{Example}
+
+%%% Coloring macros
+\newcommand{\cred}[1]{\textcolor{red}{#1}}
+\newcommand{\cblue}[1]{\textcolor{blue}{#1}}
+\newcommand{\ccyan}[1]{\textcolor{cyan}{#1}}
+\newcommand{\cgreen}[1]{\textcolor{green}{#1}}
+\newcommand{\cyellow}[1]{\textcolor{yellow}{#1}}
+\newcommand{\cpurple}[1]{\textcolor{purple}{#1}}
+\newcommand{\corange}[1]{\textcolor{orange}{#1}}
+%% custom colors
+\definecolor{astral}{RGB}{46,116,181}
+\definecolor{darkblue}{RGB}{50,76,168}
+\definecolor{darkbrown}{RGB}{99,12,8}
+
+\title{KASUMI \vspace{-2em}}
+%\author{Hamjak Debbarma}
+\date{\today}
+\linespread{0.5}
+
+\begin{document}
+  \maketitle
+ \begin{table}[h!]
+ 	\centering
+ 	\begin{tabular}{|c c c c c c c c c|} 
+ 		\hline \\
+ 		Round & $KL_{i,1}$ & $KL_{i,2}$ & $KO_{i,1}$ & $KO_{i,2}$ & $KO_{i,3}$ & $KI_{i,1}$ & $KI_{i,2}$ & $KI_{i,3}$\\
+ 		\hline \\
+ 		$1$ & $K_1\lll 1$ & $K^{'}_3$ & $K_2 \lll 5$ & $K_2 \lll 8$& $K_3 \lll 13$& $K^{'}_1$& $K^{'}_4$ & $K^{'}_8$\\  [0.8ex]
+ 		
+ 		$2$ & $K_2\lll 1$ & $K^{'}_4$ & $K_3 \lll 5$ & $K_3 \lll 8$& $K_4 \lll 13$& $K^{'}_2$& $K^{'}_1$ & $K^{'}_1$\\  [0.8ex]
+ 		
+ 		$3$ & $K_3\lll 1$ & $K^{'}_1$ & $K_4 \lll 5$ & $K_4 \lll 8$& $K_1 \lll 13$& $K^{'}_3$& $K^{'}_2$ & $K^{'}_2$\\  [0.8ex]
+ 		
+ 		$4$ & $K_4\lll 1$ & $K^{'}_2$ & $K_1 \lll 5$ & $K_1 \lll 8$& $K_2 \lll 13$& $K^{'}_4$& $K^{'}_3$ & $K^{'}_3$\\  [0.8ex]
+ 		
+ 		$5$ & $K_1\lll 1$ & $K^{'}_3$ & $K_2 \lll 5$ & $K_2 \lll 8$& $K_3 \lll 13$& $K^{'}_1$& $K^{'}_4$ & $K^{'}_4$\\  [0.8ex]
+ 		
+ 		$6$ & $K_2\lll 1$ & $K^{'}_4$ & $K_3 \lll 5$ & $K_3 \lll 8$& $K_4 \lll 13$& $K^{'}_2$& $K^{'}_5$ & $K^{'}_5$\\  [0.8ex]
+ 		
+ 		$7$ & $K_3\lll 1$ & $K^{'}_1$ & $K_4 \lll 5$ & $K_4 \lll 8$& $K_1 \lll 13$& $K^{'}_3$& $K^{'}_6$ & $K^{'}_6$\\  [0.8ex]
+ 		
+ 		$8$ & $K_4\lll 1$ & $K^{'}_2$ & $K_1 \lll 5$ & $K_1 \lll 8$& $K_2 \lll 13$& $K^{'}_4$& $K^{'}_7$ & $K^{'}_7$ \\  [0.8ex]
+ 		\hline
+ 	\end{tabular}
+ 	\label{table:1}
+ 	\caption{Round subkeys}
+ \end{table}
+  
+\end{document}
